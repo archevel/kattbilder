@@ -1,0 +1,9 @@
+{
+  "prompt": "a photograph of a cat, photorealistic, sharp focus, natural light, dslr, 50mm lens",
+  "dims": [
+    1,
+    77,
+    1024
+  ],
+  "dtype": "float32"
+}

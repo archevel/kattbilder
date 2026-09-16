@@ -1,0 +1,8 @@
+{
+  "name": "kattbilder-tools",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@huggingface/transformers": "^3.7.0"
+  }
+}

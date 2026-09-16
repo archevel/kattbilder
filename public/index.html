@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kattbilder</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.30.0/dist/ort.webgpu.min.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Kattbilder</h1>
+      <p class="sub" id="sub">Cats generated in your browser with a diffusion model on WebGPU. No server involved.</p>
+    </header>
+
+    <div class="frame">
+      <canvas id="cat" width="512" height="512" hidden></canvas>
+      <div id="overlay" class="overlay">
+        <div class="spinner"></div>
+        <div id="status">Checking WebGPU…</div>
+        <div id="progress" class="progress" hidden><div id="bar"></div></div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="next" disabled>Next cat</button>
+      <span id="queue" class="queue"></span>
+    </div>
+
+    <details class="log">
+      <summary>Log</summary>
+      <pre id="log"></pre>
+    </details>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
